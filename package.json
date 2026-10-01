@@ -1,0 +1,23 @@
+{
+  "name": "zoom-recording-sync",
+  "version": "1.0.0",
+  "description": "Weekly automation: copy Zoom class recording links into the SharePoint recordings spreadsheet.",
+  "private": true,
+  "main": "src/runJob.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "login": "node scripts/login.js",
+    "mastery": "node scripts/mastery.js",
+    "essentials": "node scripts/essentials.js",
+    "setup-cron": "bash scripts/setup-cron.sh",
+    "remove-cron": "bash scripts/setup-cron.sh --remove",
+    "test": "node --test test/dates.test.js",
+    "test:live": "node --test --test-concurrency=1 --test-timeout=1800000 test/weekly.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "playwright": "^1.47.0"
+  }
+}
