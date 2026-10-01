@@ -1,0 +1,9 @@
+# Secrets
+.env
+
+# Saved browser sessions (contain login cookies — never commit)
+.auth/
+
+# Runtime output
+logs/
+node_modules/
