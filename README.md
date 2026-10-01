@@ -1,4 +1,4 @@
-# zoom-recording-sync
+# UploadZoomRecording
 
 Every week this copies the Zoom recording link for each class into the SharePoint recordings spreadsheet, along with the session date and topic from the calendar spreadsheet.
 
